@@ -1,0 +1,93 @@
+body{
+	/*font-family:"宋体";*/
+	font-family:"Microsoft YaHei";
+	/*color: #14191e;*/
+}
+/*最外面的大盒子*/
+.bigbox{
+	width:1200px;
+	height:460px;
+	margin:auto;
+	position:relative;
+	overflow:hidden;
+	border:10px solid #bbb;
+}
+
+/*标题*/
+h1{
+	width:1200px;
+	height:60px;
+	margin:30px auto;
+	text-align: center;
+	/*font-weight: normal;*/
+}
+
+/*轮播图区*/
+.banner{
+	width:1200px;
+	height:460px;
+	overflow:hidden;
+	position:relative;
+}
+
+.banner-slide{
+	width:1200px;
+	height:460px;
+	background-repeat:no-repeat;
+	float:left;
+	display:none;
+}
+
+.slide-active{
+	display:block;
+}
+
+/*左右按钮*/
+.button{
+    position: absolute;
+    transform:rotate(180deg);
+    top: 50%;
+    left: 0;
+    height: 80px;
+    width: 40px;
+    margin-top:-40px;
+    background:url(../image/pre.png) center center no-repeat;
+}
+
+.next{
+	background:url(../image/pre2.png) center center no-repeat;
+	left:auto;
+	right:0;
+}
+
+.button:hover{
+	background-color:#333;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+
+/*点按钮*/
+.dots {
+	position: absolute;
+	bottom: 24px;
+	right: 0;
+	text-align: right;
+	padding-right: 16px;
+	line-height: 12px;
+}
+
+.dots span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin-left: 8px;
+	background-color: rgba(7, 17, 27, 0.4);
+	cursor: pointer;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 1) inset;
+}
+
+.dots span.active{
+	box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4) inset;
+	background-color: #ffffff;
+}

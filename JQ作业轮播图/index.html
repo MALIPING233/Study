@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQ轮播图</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	
+		
+	<div class="main" id="main">
+		<!-- 标题 -->
+		<h1>jQurey实现轮播图</h1>
+	
+		<div class="bigbox" id="bigbox">
+		<!-- 轮播图片 -->
+			<div class="banner" id="banner">
+					<div class="banner-slide slide-active">
+						<img src="image/1.jpg" />
+					</div>
+					<div class="banner-slide">
+						<img src="image/2.jpg" />
+					</div>
+					<div class="banner-slide ">
+						<img src="image/3.jpg" />
+					</div>
+					<div class="banner-slide ">
+						<img src="image/4.jpg" />
+					</div>
+					<div class="banner-slide ">
+						<img src="image/5.jpg" />
+					</div>
+			</div>
+			<!-- 左右按钮 -->
+			<a href="javascript:void(0)" class="button prev" id="prev"></a>
+			<a href="javascript:void(0)" class="button next" id="next"></a>
+			<!-- 点 -->
+			<div class="dots" id="dots">
+				<span class="active"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
